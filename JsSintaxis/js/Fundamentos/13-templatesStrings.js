@@ -19,3 +19,10 @@ let estaciones = `<ul>
 </ul>`
 console.log(estaciones)
 
+let fraseUno = "Hola bienvenido"
+let fraseDos = "carlos steven lopez"
+ 
+let union2 = `Con gusto me ${fraseUno} señor ${fraseDos} que pases un excelente dia bb`
+console.log(typeof union2)
+
+
