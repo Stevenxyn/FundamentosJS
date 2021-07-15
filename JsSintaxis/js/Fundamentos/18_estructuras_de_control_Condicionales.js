@@ -4,7 +4,7 @@ Condicionales en JS
 
 */
 
-let edad = 18;
+let edad = 19;
 
 // if(age > 17){
 //   console.log("Eres mayor ")
@@ -24,7 +24,7 @@ Buenas tardes: 12hrs - 18hrs
 Buenas noches: 19 hrs - 23hrs
 EstoyMimido: 0hrs - 5hrs
  */
-let hora = 12;
+let hora = 20;
 if (hora >= 6 && hora <= 11) {
   console.log("Buenos dias!");
 } else if (hora >= 12 && hora <= 18) {
@@ -49,13 +49,18 @@ funciona para if y else solo de dos por que si son mas seria mejor unificarlos c
 
 console.log("Operador ternario");
 
-let eresMayor = edad >= 18 ? "Eres mayor" : "Eres menor";
+let eresMayor =(edad >= 18) 
+  ? "Eres mayor"
+  : "Eres menor";
 console.log(eresMayor);
 
 //Ejemplo 2
 
 let dia = true;
-let esDiaONoche = dia == true ? "Es de dia" : "Es de noche";
+
+let esDiaONoche = dia == true 
+  ? "Es de dia" 
+  : "Es de noche";
 console.log(esDiaONoche);
 
 /*
@@ -98,3 +103,11 @@ switch (queDiaEs) {
     console.log("Digite un valor valido")
     break;
 }
+
+
+let numeros = [1,2,3,4,5,6,7,8,9,0];
+
+for(let i =0; i < numeros.length; i++){
+  console.log(numeros[i])
+}
+
