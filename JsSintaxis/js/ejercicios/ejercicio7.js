@@ -13,6 +13,5 @@ for(var i = 1; i <= 100; i++){
 
 // console.log(i + " x " + numero + " = " + (i*numero)); 
 
-console.log(i + " X " + numero + " = " + (i*numero));
-  
+console.log(i + " X " + numero + " = " + (i*numero);
 }

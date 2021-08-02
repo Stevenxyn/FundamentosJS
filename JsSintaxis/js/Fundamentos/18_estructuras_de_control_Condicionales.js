@@ -49,18 +49,14 @@ funciona para if y else solo de dos por que si son mas seria mejor unificarlos c
 
 console.log("Operador ternario");
 
-let eresMayor =(edad >= 18) 
-  ? "Eres mayor"
-  : "Eres menor";
+let eresMayor = edad >= 18 ? "Eres mayor" : "Eres menor";
 console.log(eresMayor);
 
 //Ejemplo 2
 
 let dia = true;
 
-let esDiaONoche = dia == true 
-  ? "Es de dia" 
-  : "Es de noche";
+let esDiaONoche = dia == true ? "Es de dia" : "Es de noche";
 console.log(esDiaONoche);
 
 /*
@@ -68,14 +64,17 @@ switch - case
 domingo - 0
 lunes - 1
 martes - 2
-miercoles - 3 
+miercoles - 3
 jueves - 4
 viernes - 5
 sabado - 6
 */
 
-let queDiaEs = 7;
+//let queDiaEs = prompt ("Ingrese un numero") ;
 
+let queDiaEs = 5;
+
+ //queDiaEs = parseInt(queDiaEs) prompt toma valores en string hay que convertirlos a enteros
 switch (queDiaEs) {
   case 0:
     console.log("Domingo de reposo");
@@ -100,14 +99,33 @@ switch (queDiaEs) {
     break;
 
   default:
-    console.log("Digite un valor valido")
+    console.log("Digite un valor valido");
     break;
 }
 
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
-let numeros = [1,2,3,4,5,6,7,8,9,0];
+/* for(let i =0; i < numeros.length; i++){
+  console.log(numeros[i])//asi muestra el valor de la variable igualitom
+  console.log(i)
 
-for(let i =0; i < numeros.length; i++){
-  console.log(numeros[i])
+} */
+
+for (let i = 0; i < numeros.length; i++) {
+  if (i === 7) {
+    break;
+  }
+  //console.log(numeros[i])
+}
+50;
+10;
+
+// let pares = prompt("Ingrese un valor limite que quiera",[200] )
+
+let pares = 5;
+for (let i = 0; i <= pares; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
 }
 
